@@ -4,26 +4,31 @@ export const TableHistory = styled.table`
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-font-size: 14px;
+    font-family: ${props => props.theme.fonts.body};
+font-size: ${props => props.theme.space[4]}px;
 border-radius: 10px;
 border-spacing: 0;
 text-align: center;
-padding-top: 20px;
+padding-top: ${props => props.theme.space[4]}px;
 `
 export const TableTh = styled.th`
-background: #BCEBDD;
-color: white;
+background: ${props => props.theme.colors.mint};
+color: ${props => props.theme.colors.white};
 text-shadow: 0 1px 1px #2D2020;
-padding: 10px 20px;
+padding-top: ${props => props.theme.space[3]}px;
+padding-right: ${props => props.theme.space[4]}px;
+padding-bottom: ${props => props.theme.space[3]}px;
+padding-left: ${props => props.theme.space[4]}px;
 `
 export const TableTd = styled.td`
-padding: 10px 20px;
-background: #F8E391;
+padding-top: ${props => props.theme.space[3]}px;
+padding-right: ${props => props.theme.space[4]}px;
+padding-bottom: ${props => props.theme.space[3]}px;
+padding-left: ${props => props.theme.space[4]}px;
+background:  ${props => props.theme.colors.beige};
 `
 export const TableTr = styled.tr`
-background: #D1C7BF;
-font-weight: bold;`
+font-weight: ${props => props.theme.fontWeights.bold};`
 
 
 

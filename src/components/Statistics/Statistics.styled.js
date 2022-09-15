@@ -1,26 +1,26 @@
 import styled from '@emotion/styled';
 
 export const StatisticsSection = styled.section`
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin-left: auto;
   margin-right: auto;
   width: 300px;
 `;
 export const StatisticsTitle = styled.h2`
   display: block;
-  font-size: 1.2em;
+  font-size: ${props => props.theme.fontSizes.ms}px;
   text-align: center;
-  padding-top: 20px;
-  font-weight: 700;
-  color: grey;
+  padding-top: ${props => props.theme.space[4]}px;
+  font-weight: ${props => props.theme.fontWeights.bold};
+  color: ${props => props.theme.colors.grey};
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: ${props => props.theme.space[5]}px;
 `;
 
 export const StatisticsList = styled.ul`
   display: flex;
   justify-content: space-between;
-  background-color: azure;
+  background-color: ${props => props.theme.colors.azure};
 `;
 
 export const StatisticsItem = styled.li`
@@ -29,17 +29,20 @@ export const StatisticsItem = styled.li`
   width: 33.3333%;
   text-align: center;
   border: 1px solid grey;
-  padding: 20px 10px;
+  padding-top: ${props => props.theme.space[4]}px;
+  padding-right: ${props => props.theme.space[3]}px;
+  padding-bottom: ${props => props.theme.space[4]}px;
+  padding-left: ${props => props.theme.space[3]}px;
   background-color: ${props => props.bgColor};
 `;
 
 export const StatisticsLabel = styled.span`
-  color: white;
+  color: ${props => props.theme.colors.white};
 `;
 export const StatisticsPercentage = styled.span`
-  font-weight: 700;
-  color: white;
-  margin-top: 10px;
+  font-weight: ${props => props.theme.fontWeights.bold};
+  color: ${props => props.theme.colors.white};
+  margin-top: ${props => props.theme.space[3]}px;
 `;
 
 export function getRandomHexColor() {

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ProfileCard = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -9,7 +9,7 @@ export const ProfileCard = styled.div`
 
 export const ProfileDescription = styled.div`
   text-align: center;
-  padding-top: 20px;
+  padding-top: ${props => props.theme.space[4]}px;
 `;
 
 export const ProfileImg = styled.img`
@@ -18,15 +18,15 @@ export const ProfileImg = styled.img`
 `;
 
 export const ProfileName = styled.p`
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeights.bold};
 `;
 export const ProfileTag = styled.p`
-  color: #808080;
+  color: ${props => props.theme.colors.grey};
 `;
 export const ProfileList = styled.ul`
   display: flex;
   justify-content: space-between;
-  background-color: azure;
+  background-color: ${props => props.theme.colors.azure};
 `;
 
 export const ProfileItem = styled.li`
@@ -39,8 +39,8 @@ export const ProfileItem = styled.li`
 `;
 
 export const ProfileText = styled.span`
-  color: #808080;
+  color: ${props => props.theme.colors.gray};
 `;
 export const ProfileQuantity = styled.span`
-  font-weight: 700;
+  font-weight: ${props => props.theme.fontWeights.bold};
 `;
