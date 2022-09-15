@@ -6,7 +6,6 @@ export const TableHistory = styled.table`
     margin-right: auto;
     font-family: ${props => props.theme.fonts.body};
 font-size: ${props => props.theme.space[4]}px;
-border-radius: 10px;
 border-spacing: 0;
 text-align: center;
 padding-top: ${props => props.theme.space[4]}px;
