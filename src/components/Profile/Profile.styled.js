@@ -13,7 +13,7 @@ export const ProfileDescription = styled.div`
 `;
 
 export const ProfileImg = styled.img`
-  border-radius: 50%;
+  border-radius: ${props => props.theme.borders.medium};
   border: 1px solid;
 `;
 
@@ -35,7 +35,10 @@ export const ProfileItem = styled.li`
   width: 33.3333%;
   text-align: center;
   border: 1px solid grey;
-  padding: 20px 10px;
+  padding-top: ${props => props.theme.space[4]}px;
+  padding-right: ${props => props.theme.space[3]}px;
+  padding-bottom: ${props => props.theme.space[4]}px;
+  padding-left: ${props => props.theme.space[3]}px;
 `;
 
 export const ProfileText = styled.span`

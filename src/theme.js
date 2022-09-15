@@ -25,8 +25,7 @@ export const theme = {
         normal: 400,
         bold: 700,
     },
-    // borders: {
-    //     medium: 50%
-
-    // }
+    borders: {
+        medium: '50%',
+    }
 };

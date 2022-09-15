@@ -22,7 +22,7 @@ padding-left: ${props => props.theme.space[3]}px;
 export const FriendStatus = styled.span`
     width: ${props => props.theme.space[4]}px;
     height: ${props => props.theme.space[4]}px;
-    border-radius:50%;
+    border-radius:${props => props.theme.borders.medium};
 background-color: ${bgColorIsOnline};
 `
 export const FriendImg = styled.img`
